@@ -1,5 +1,4 @@
 #Movie Lab - Node
-###July 22, 2014
 
 We'll be continuing our Movie app from this morning. At first, you created a 2 routes, one to search for a movie, and one to show movie search results.
 
@@ -22,5 +21,6 @@ The next steps in this app is create a movie detail page, and an ability to save
 4. Provide a watch later route, which list the movies you have saved. Each link should also take me back to a movie detail page using the above route.
 
 ##Bonus
+* Style it up
 * Have an option to remove the movie from the watch later list
 * Try to incorporate Bootstrap, Foundation to utilize some of their components or css grids.
