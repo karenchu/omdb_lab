@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Movie Search Results</title>
+  </head>
+  <body>
+    <ul>
+      <form action="/watch" method="post">
+      <!-- Loop over all the films in movieList -->
+      <% movieList.forEach(function (film) {%>
+
+      <!-- Only show the results that are movies -->
+      <!-- (i.e., do not show TV shows) -->
+      <% if (film.Type === "movie") { %>
+
+      <!-- Show the title and the imdbID -->
+      <li><a href="/show/<%= film.imdbID%>"><%= film.Title %> - <%=film.imdbID%></a></li>
+      <button>Save</button>
+
+      <!-- Close the `if` -->
+      <% } %>
+
+      <!-- Close the `forEach` -->
+      <% }) %>
+    </ul>
+
+  </body>
+</html>

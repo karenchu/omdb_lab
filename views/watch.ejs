@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Watch List</title>
+  </head>
+  <body>
+      Watch List:
+   <% movieList.forEach(function (film) {%>
+      <div>
+        <a href="/results/<%= index %>"><%= film.Title %></a>
+        <form action="/watch/<%= index %>?_method=DELETE" method="post">
+          <button> Delete </button>
+        </form>
+      </div>
+    <% }) %>
+  </body>
+</html>
